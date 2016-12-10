@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "550034336259",
+    "firebase_url": "https://upload2-7e414.firebaseio.com",
+    "project_id": "upload2-7e414",
+    "storage_bucket": "upload2-7e414.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:550034336259:android:191805560dacd249",
+        "android_client_info": {
+          "package_name": "parkhomov.andrew.upload2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "550034336259-99rcfbkht680l814gbnkoomu7k65bua9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "parkhomov.andrew.upload2",
+            "certificate_hash": "3A68E8D41F96630C73CF2367ECB044C6F2D3996A"
+          }
+        },
+        {
+          "client_id": "550034336259-rthl00sb8fesmgripbc3bpjg5ipthfof.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1R4P8ZobcdmA8JJTOsuyTz4QSE-AsiAY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "550034336259-rthl00sb8fesmgripbc3bpjg5ipthfof.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
