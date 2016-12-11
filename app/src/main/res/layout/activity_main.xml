@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -11,42 +12,77 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="parkhomov.andrew.upload2.MainActivity">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/buttonChoose"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:id="@+id/imageView" />
+    <LinearLayout
+        android:id="@+id/linearTop"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <!--<Button-->
-        <!--android:id="@+id/buttonUpload"-->
-        <!--android:text="Upload"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:layout_alignParentRight="true"-->
-        <!--android:layout_alignParentEnd="true"-->
-        <!--android:layout_marginRight="38dp"-->
-        <!--android:layout_marginEnd="38dp"-->
-        <!--android:layout_marginTop="53dp" />-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/buttonChoose"
-        android:text="Choose and upload"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
 
-    <!--<Button-->
-        <!--android:text="Download"-->
-        <!--android:onClick="downloadFile"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignTop="@+id/buttonUpload"-->
-        <!--android:layout_alignParentRight="true"-->
-        <!--android:layout_alignParentEnd="true"-->
-        <!--android:id="@+id/button2" />-->
+            <Button
+                android:id="@+id/buttonChoose"
+                android:text="Choose and upload"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height = "wrap_content" />
 
-</RelativeLayout>
+            <ImageButton
+                android:src="@drawable/ic_fiber_new_black_24dp"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/viewflipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorAccent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/imageView" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/frameLayout2"
+            android:background="@color/colorPrimary"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/imageView2" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/imageView3" />
+        </FrameLayout>
+    </ViewFlipper>
+
+</LinearLayout>
